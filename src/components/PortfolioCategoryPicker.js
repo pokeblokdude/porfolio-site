@@ -1,17 +1,27 @@
-import { Link, useRouteMatch } from 'react-router-dom';
+const PortfolioCategoryPicker = ({ page, setPortfolioPage }) => {
 
-const PortfolioCategoryPicker = () => {
-    const { url } = useRouteMatch();
+    let hovered ='';
 
     return (
         <div className='portfolio-categories-container'>
             <li className='portfolio-categories-list'>
-                <ul><Link className='link' to={`${url}/code`}>Code</Link></ul>
-                <ul><Link className='link' to={`${url}/film-video`}>Film & Video</Link></ul>
-                <ul><Link className='link' to={`${url}/photo`}>Photo</Link></ul>
-                <ul><Link className='link' to={`${url}/misc`}>Misc.</Link></ul>
+                <ul 
+                    onClick={() => setPortfolioPage('code')}
+                    style={page === 'code' ? {borderBottom: '2px solid black', marginBottom: '-2px'} : {}}
+                >Code</ul>
+                <ul 
+                    onClick={() => setPortfolioPage('film-video')}
+                    style={page === 'film-video' ? {borderBottom: '2px solid black', marginBottom: '-2px'} : {}}
+                >Film & Video</ul>
+                <ul 
+                    onClick={() => setPortfolioPage('photo')}
+                    style={page === 'photo' ? {borderBottom: '2px solid black', marginBottom: '-2px'} : {}}
+                >Photo</ul>
+                <ul 
+                    onClick={() => setPortfolioPage('misc')}
+                    style={page === 'misc' ? {borderBottom: '2px solid black', marginBottom: '-2px'} : {}}
+                >Misc.</ul>
             </li>
-            <hr></hr>
         </div>
     )
 }

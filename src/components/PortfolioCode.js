@@ -1,7 +1,7 @@
 const PortfolioCode = () => {
     return (
         <div>
-            <p>CODING PROJECTS</p>
+            <p style={{border: '1px solid black', maxWidth: '200px'}}>CODING PROJECTS</p>
         </div>
     )
 }
