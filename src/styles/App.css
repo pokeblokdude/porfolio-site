@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,6 +24,7 @@ a {
 }
 
 .header {
+  position: fixed;
   background-color: #24252A;
   color: white;
   height: 72px;
@@ -24,11 +33,12 @@ a {
   justify-content: center;
   width: 100%;
   flex-grow: 1;
+  z-index: 10;
 }
 
 .header-container{
   max-width: 1920px;
-  min-width: 650px;
+  min-width: 690px;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
@@ -45,7 +55,8 @@ a {
   align-self: center;
 }
 
-.header-button{
+.header-button {
+  text-decoration: none;
   display: inline-block;
   margin: 0px 20px;
   color: #EDF0F1;
@@ -58,11 +69,25 @@ a {
   margin: 0px 20px;
 }
 
+.divider {
+  height: 3px;
+  width: 100%;
+  box-shadow: 0px -1px 10px 10px rgb(255, 255, 255);
+}
+
 .body {
+  margin-top: 72px;
   display: flex;
   width: 100%;
   max-width: 1280px;
   min-width: 500px;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.portfolio-header {
+  border: 1px solid red;
 }

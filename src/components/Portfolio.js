@@ -11,16 +11,12 @@ const Portfolio = ({ page, setPortfolioPage }) => {
         switch(pg) {
             case 'code':
                 return (<PortfolioCode/>);
-                break;
             case 'film-video':
                 return (<PortfolioFilmVideo/>);
-                break;
             case 'photo':
                 return (<PortfolioPhoto/>);
-                break;
             case 'misc':
                 return (<PortfolioMisc/>);
-                break;
             default:
                 return;
         }
@@ -31,7 +27,6 @@ const Portfolio = ({ page, setPortfolioPage }) => {
             <PortfolioCategoryPicker page={page} setPortfolioPage={setPortfolioPage} />
             {slectPage(page)}
         </div>
-        
     )
 }
 

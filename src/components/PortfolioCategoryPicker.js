@@ -1,7 +1,4 @@
 const PortfolioCategoryPicker = ({ page, setPortfolioPage }) => {
-
-    let hovered ='';
-
     return (
         <div className='portfolio-categories-container'>
             <li className='portfolio-categories-list'>
