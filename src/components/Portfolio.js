@@ -3,9 +3,8 @@ import PortfolioCode from './PortfolioCode';
 import PortfolioFilmVideo from './PortfolioFilmVideo';
 import PortfolioPhoto from './PortfolioPhoto';
 import PortfolioMisc from './PortfolioMisc';
-import PortfolioCategoryPicker from './PortfolioCategoryPicker';
 
-const Portfolio = ({ page, setPortfolioPage }) => {
+const Portfolio = ({ page }) => {
     //const location = useLocation();
     const slectPage = (pg) => {
         switch(pg) {
@@ -24,7 +23,6 @@ const Portfolio = ({ page, setPortfolioPage }) => {
 
     return (
         <div className='portfolio'>
-            <PortfolioCategoryPicker page={page} setPortfolioPage={setPortfolioPage} />
             {slectPage(page)}
         </div>
     )

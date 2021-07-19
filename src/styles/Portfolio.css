@@ -2,12 +2,17 @@
     display: flex;
     width: 100%;
     height: 100%;
-    margin: 20px 0px 0px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 32px;
+    margin-bottom: 64px;
 }
 
 .portfolio-categories-container {
+    margin: 3px 7px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -44,10 +49,71 @@
     padding: 0px 20px;
 }
 
+.carousel-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 64px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #24252A;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.carousel-slider {
+    align-items: center;
+    background-color: #24252A;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    max-height: 720px;
+    box-shadow: inset 0px 0px 10px black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.carousel .slide {
+    align-self: center;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.thumbs-wrapper {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbs {
+    display: flex;
+    align-items: center;
+}
+
+.control-arrow {
+    padding: 20px;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+.portfolio-misc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
 .portfolio h1 {
     font-size: 48px;
     align-self: flex-start;
-    margin: 20px 20px 0px 20px;
+    margin: 30px 20px 0px 20px;
 }
 .portfolio h2 {
     font-size: 32px;
@@ -68,4 +134,26 @@
     width: 100%;
     min-width: 500px;
     height: 576px;
+}
+
+.pf-link {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 64px;
+}
+.pf-link h2 {
+    margin: 0;
+    margin-left: 4px;
+}
+.pf-link a {
+    color: black;
+    display: flex;
+    height: auto;
+}
+.pf-link a:hover {
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
+}
+.pf-link-icon {
+    align-self: center;
 }
